@@ -1,0 +1,333 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bikes | Dream Drive</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="icon" type="image/png" href="images/fevicon.png">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+<a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+<i class="bi bi-car-front-fill me-2 fs-4"></i>
+Dream Drive
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="cars.html">Cars</a></li>
+<li class="nav-item"><a class="nav-link active" href="bikes.html">Bikes</a></li>
+<li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+<li class="nav-item">
+<a class="btn btn-danger ms-3" href="contact.html">Book Test Drive</a>
+</li>
+
+</ul>
+
+<button id="themeToggle" class="btn btn-outline-light ms-3">🌙</button>
+
+</div>
+</div>
+</nav>
+
+
+<!-- HEADER -->
+<section class="page-header bike-header text-center text-white">
+<div class="container">
+<h1>Our Premium Bikes</h1>
+<p>Speed • Style • Power</p>
+</div>
+</section>
+
+
+<section class="py-5">
+<div class="container">
+
+<h2 class="text-center mb-5">Browse Our Bikes</h2>
+
+<h4 class="mb-4">Sports Bikes</h4>
+
+<div class="row">
+
+<!-- ZX10R -->
+<div class="col-md-4 mb-4">
+<div class="card shadow">
+<img src="images/zx10r.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+<h5>Kawasaki ZX-10R</h5>
+<p>₹ 20.7L</p>
+
+<button
+class="btn btn-dark"
+data-bs-toggle="popover"
+data-bs-trigger="focus"
+data-bs-html="true"
+data-bs-title="Kawasaki ZX-10R"
+data-bs-content="
+Engine: 998cc <br>
+Power: 203 HP <br>
+Top Speed: 299 km/h <br><br>
+<audio controls style='width:100%'>
+<source src='sounds/zx10r.mp3' type='audio/mpeg'>
+</audio>
+">
+View Details
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Ducati -->
+<div class="col-md-4 mb-4">
+<div class="card shadow">
+<img src="images/bike1.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+<h5>Ducati Panigale V4</h5>
+<p>₹ 32.05L</p>
+
+<button
+class="btn btn-dark"
+data-bs-toggle="popover"
+data-bs-trigger="focus"
+data-bs-html="true"
+data-bs-title="Ducati Panigale V4"
+data-bs-content="
+Engine: 1103cc <br>
+Power: 215 HP <br>
+Top Speed: 299 km/h <br><br>
+<audio controls style='width:100%'>
+<source src='sounds/ducati.mp3' type='audio/mpeg'>
+</audio>
+">
+View Details
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- BMW -->
+<div class="col-md-4 mb-4">
+<div class="card shadow">
+<img src="images/s1000rr.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+<h5>BMW S1000RR</h5>
+<p>₹ 21L</p>
+
+<button
+class="btn btn-dark"
+data-bs-toggle="popover"
+data-bs-trigger="focus"
+data-bs-html="true"
+data-bs-title="BMW S1000RR"
+data-bs-content="
+Engine: 999cc <br>
+Power: 210 HP <br>
+Top Speed: 303 km/h <br><br>
+<audio controls style='width:100%'>
+<source src='sounds/bmw.mp3' type='audio/mpeg'>
+</audio>
+">
+View Details
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<hr class="my-5">
+
+
+<h4 class="mb-4">Cruiser Bikes</h4>
+
+<div class="row">
+
+<!-- Harley -->
+<div class="col-md-6 mb-4">
+<div class="card shadow">
+<img src="images/harley.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+<h5>Harley Davidson Iron 883</h5>
+<p>₹ 12L</p>
+
+<button
+class="btn btn-dark"
+data-bs-toggle="popover"
+data-bs-trigger="focus"
+data-bs-html="true"
+data-bs-title="Harley Davidson Iron 883"
+data-bs-content="
+Engine: 883cc <br>
+Power: 50 HP <br>
+Top Speed: 170 km/h <br><br>
+<audio controls style='width:100%'>
+<source src='sounds/harley.mp3' type='audio/mpeg'>
+</audio>
+">
+View Details
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Meteor -->
+<div class="col-md-6 mb-4">
+<div class="card shadow">
+<img src="images/bike2.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+<h5>Royal Enfield Meteor 350</h5>
+<p>₹ 2.3L</p>
+
+<button
+class="btn btn-dark"
+data-bs-toggle="popover"
+data-bs-trigger="focus"
+data-bs-html="true"
+data-bs-title="Royal Enfield Meteor 350"
+data-bs-content="
+Engine: 349cc <br>
+Power: 20 HP <br>
+Top Speed: 120 km/h <br><br>
+<audio controls style='width:100%'>
+<source src='sounds/meteor.mp3' type='audio/mpeg'>
+</audio>
+">
+View Details
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-3">
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h5>Dream Drive Showroom</h5>
+<p>123 Auto Street<br>Telengana, India</p>
+<p>Email: info@dreamdrive.com</p>
+<p>Phone: +91 98765 43210</p>
+</div>
+
+<div class="col-md-4">
+<h5>Quick Links</h5>
+<ul class="list-unstyled">
+<li><a href="index.html" class="footer-link">Home</a></li>
+<li><a href="cars.html" class="footer-link">Cars</a></li>
+<li><a href="bikes.html" class="footer-link">Bikes</a></li>
+<li><a href="offers.html" class="footer-link">Offers</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>Follow Us</h5>
+<i class="bi bi-facebook fs-4 me-3"></i>
+<i class="bi bi-instagram fs-4 me-3"></i>
+<i class="bi bi-twitter fs-4"></i>
+</div>
+
+</div>
+
+<hr class="bg-light">
+
+<div class="text-center">
+<p class="mb-0">© 2026 Dream Drive Showroom | All Rights Reserved</p>
+</div>
+
+</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+
+/* Enable Popovers */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+const popoverTriggerList =
+document.querySelectorAll('[data-bs-toggle="popover"]');
+
+const popoverList =
+[...popoverTriggerList].map(function (popoverTriggerEl) {
+return new bootstrap.Popover(popoverTriggerEl);
+});
+
+});
+
+
+/* Theme Toggle */
+
+const toggleBtn = document.getElementById("themeToggle");
+
+if (localStorage.getItem("theme") === "dark") {
+document.body.classList.add("dark-mode");
+toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.addEventListener("click", function () {
+
+document.body.classList.toggle("dark-mode");
+
+if (document.body.classList.contains("dark-mode")) {
+localStorage.setItem("theme", "dark");
+toggleBtn.textContent = "☀️";
+}
+else {
+localStorage.setItem("theme", "light");
+toggleBtn.textContent = "🌙";
+}
+
+});
+
+</script>
+
+</body>
+</html>
+```

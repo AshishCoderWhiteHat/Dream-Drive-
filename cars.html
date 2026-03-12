@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cars | Dream Drive</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/fevicon.png">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+
+<a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+<i class="bi bi-car-front-fill me-2 fs-4"></i>
+Dream Drive
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="cars.html">Cars</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="bikes.html">Bikes</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="offers.html">Offers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="btn btn-danger ms-3" href="testdrive.html">Book Test Drive</a>
+</li>
+
+</ul>
+
+<button id="themeToggle" class="btn btn-outline-light ms-3">🌙</button>
+
+</div>
+</div>
+</nav>
+
+
+<!-- HEADER -->
+<section class="page-header text-center text-white">
+<div class="container">
+<h1>Our Premium Cars</h1>
+<p>Luxury • Performance • Innovation</p>
+</div>
+</section>
+
+
+<!-- CARS SECTION -->
+<section class="py-5">
+<div class="container">
+
+<h2 class="text-center mb-4">Browse Our Collection</h2>
+
+<!-- SEARCH BAR -->
+<div class="row mb-5">
+<div class="col-md-6 mx-auto">
+<input 
+type="text" 
+id="searchCar" 
+class="form-control"
+placeholder="Search cars...">
+</div>
+</div>
+
+
+<!-- LUXURY CARS -->
+<h3 class="mb-4">Luxury Cars</h3>
+
+<div class="row">
+
+<!-- Mercedes -->
+<div class="col-md-4 mb-4 car-card">
+<div class="card shadow position-relative">
+
+<span class="badge bg-danger position-absolute m-2">New</span>
+
+<img src="images/mercedes.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Mercedes S-Class</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 250 km/h <br>
+<i class="bi bi-lightning"></i> 429 HP <br>
+<i class="bi bi-gear"></i> Automatic
+</p>
+
+<p class="fw-bold">₹ 1.70 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- BMW -->
+<div class="col-md-4 mb-4 car-card">
+<div class="card shadow">
+
+<img src="images/bmw.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">BMW 7 Series</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 250 km/h <br>
+<i class="bi bi-lightning"></i> 536 HP <br>
+<i class="bi bi-gear"></i> Automatic
+</p>
+
+<p class="fw-bold">₹ 1.80 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- Audi -->
+<div class="col-md-4 mb-4 car-card">
+<div class="card shadow">
+
+<img src="images/audi.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Audi A8</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 250 km/h <br>
+<i class="bi bi-lightning"></i> 335 HP <br>
+<i class="bi bi-gear"></i> Automatic
+</p>
+
+<p class="fw-bold">₹ 1.60 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+<!-- Lexus LS -->
+<div class="col-md-4 mb-4 car-card">
+<div class="card shadow">
+
+<img src="images/lexus.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Lexus LS</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 250 km/h <br>
+<i class="bi bi-lightning"></i> 416 HP <br>
+<i class="bi bi-gear"></i> Automatic
+</p>
+
+<p class="fw-bold">₹ 1.90 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- Jaguar XJ -->
+<div class="col-md-4 mb-4 car-card">
+<div class="card shadow position-relative">
+
+<span class="badge bg-success position-absolute m-2">Popular</span>
+
+<img src="images/jaguar.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Jaguar XJ</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 250 km/h <br>
+<i class="bi bi-lightning"></i> 470 HP <br>
+<i class="bi bi-gear"></i> Automatic
+</p>
+
+<p class="fw-bold">₹ 1.65 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- Maserati Quattroporte -->
+<div class="col-md-4 mb-4 car-card">
+<div class="card shadow">
+
+<img src="images/maserati.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Maserati Quattroporte</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 270 km/h <br>
+<i class="bi bi-lightning"></i> 523 HP <br>
+<i class="bi bi-gear"></i> Automatic
+</p>
+
+<p class="fw-bold">₹ 1.75 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<hr class="my-5">
+
+
+<!-- ELECTRIC CARS -->
+<h3 class="mb-4">Electric Cars</h3>
+
+<div class="row">
+
+<!-- Tesla -->
+<div class="col-md-6 mb-4 car-card">
+<div class="card shadow">
+
+<img src="images/tesla.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Tesla Model S</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 322 km/h <br>
+<i class="bi bi-lightning"></i> 1020 HP <br>
+<i class="bi bi-battery-charging"></i> Electric
+</p>
+
+<p class="fw-bold">₹ 1.50 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+
+<!-- Porsche -->
+<div class="col-md-6 mb-4 car-card">
+<div class="card shadow">
+
+<img src="images/car3.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">Porsche Taycan</h5>
+
+<p class="text-muted">
+<i class="bi bi-speedometer2"></i> 260 km/h <br>
+<i class="bi bi-lightning"></i> 750 HP <br>
+<i class="bi bi-battery-charging"></i> Electric
+</p>
+
+<p class="fw-bold">₹ 1.70 Cr</p>
+
+<a href="testdrive.html" class="btn btn-danger">Book Test Drive</a>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 pb-3">
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+<h5>Dream Drive Showroom</h5>
+<p>123 Auto Street<br>Telangana, India</p>
+<p>Email: info@dreamdrive.com</p>
+<p>Phone: +91 98765 43210</p>
+</div>
+
+<div class="col-md-4">
+<h5>Quick Links</h5>
+<ul class="list-unstyled">
+<li><a href="index.html" class="footer-link">Home</a></li>
+<li><a href="cars.html" class="footer-link">Cars</a></li>
+<li><a href="bikes.html" class="footer-link">Bikes</a></li>
+<li><a href="offers.html" class="footer-link">Offers</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>Follow Us</h5>
+<i class="bi bi-facebook fs-4 me-3"></i>
+<i class="bi bi-instagram fs-4 me-3"></i>
+<i class="bi bi-twitter fs-4"></i>
+</div>
+
+</div>
+
+<hr class="bg-light">
+
+<div class="text-center">
+<p class="mb-0">© 2026 Dream Drive Showroom | All Rights Reserved</p>
+</div>
+
+</div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- THEME TOGGLE -->
+<script>
+
+const toggleBtn = document.getElementById("themeToggle");
+
+if (localStorage.getItem("theme") === "dark") {
+document.body.classList.add("dark-mode");
+toggleBtn.textContent = "☀️";
+}
+
+toggleBtn.addEventListener("click", function () {
+
+document.body.classList.toggle("dark-mode");
+
+if (document.body.classList.contains("dark-mode")) {
+localStorage.setItem("theme", "dark");
+toggleBtn.textContent = "☀️";
+}
+else {
+localStorage.setItem("theme", "light");
+toggleBtn.textContent = "🌙";
+}
+
+});
+
+</script>
+
+
+<!-- CAR SEARCH FEATURE -->
+<script>
+
+const searchInput = document.getElementById("searchCar");
+
+searchInput.addEventListener("keyup", function(){
+
+let filter = searchInput.value.toLowerCase();
+let cars = document.querySelectorAll(".car-card");
+
+cars.forEach(function(car){
+
+let title = car.querySelector(".card-title").textContent.toLowerCase();
+
+if(title.includes(filter)){
+car.style.display = "block";
+}
+else{
+car.style.display = "none";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

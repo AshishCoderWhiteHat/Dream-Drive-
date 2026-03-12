@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fevicon for the tabs -->
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+</head>
+<body>
+    
+    <!-- Navbar Same as Home Page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <i class="bi bi-car-front-fill me-2 fs-4"></i>
+      Dream Drive
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cars.html">Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="bikes.html">Bikes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="btn btn-danger ms-3" href="contact.html">Book Test Drive</a>
+        </li>
+      </ul>
+      <button id="themeToggle" class="btn btn-outline-light ms-3">🌙 </button>
+    </div>
+  </div>
+</nav>
+    
+        <!-- header part -->
+
+        <section class="page-header text-center text-white">
+            <div class="container">
+                <h1>Exclusive Offers</h1>
+                <p>Grab The Best Deals Before They’re Gone</p>
+            </div>
+        </section>
+
+        <!-- What we are Offering Table Layout -->
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Current Discounts</h2>
+                
+                <!-- Table code -->
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-hover text-center align-middle">
+
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Vehicles</th>
+                                <th>Category</th>
+                                <th>Original Price</th>
+                                <th>Discount</th>
+                                <th>Final Price</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>ZX 10R</td>
+                                <td>Sport Bike</td>
+                                <td>₹ 20.7L</td>
+                                <td>10%</td>
+                                <td>₹ 18.63L</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Super Meteor 650</td>
+                                <td>Cruiser Bike</td>
+                                <td>₹ 4L</td>
+                                <td>5%</td>
+                                <td>₹ 3.8L</td>
+                            </tr>
+
+                            <tr>
+                                <td>Bentley Continental GT</td>
+                                <td>Luxury Car</td>
+                                <td>₹ 5.86 Cr</td>
+                                <td>15%</td>
+                                <td>₹ 4.98 Cr</td>
+                            </tr>
+
+                            <tr>
+                                <td>Lamborghini Huracan</td>
+                                <td>Sport Car</td>
+                                <td>₹ 3.73 CR</td>
+                                <td>12%</td>
+                                <td>₹ 3.28 CR</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer  -->
+
+<footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+        <div class="row">
+
+        <!-- Column 1 -->
+      <div class="col-md-4">
+        <h5>Dream Drive Showroom</h5>
+        <p>123 Auto Street<br>Telengana, India</p>
+        <p>Email: info@dreamdrive.com</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="cars.html" class="footer-link">Cars</a></li>
+          <li><a href="bikes.html" class="footer-link">Bikes</a></li>
+          <li><a href="offers.html" class="footer-link">Offers</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <i class="bi bi-facebook fs-4 me-3"></i>
+        <i class="bi bi-instagram fs-4 me-3"></i>
+        <i class="bi bi-twitter fs-4"></i>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+
+    <div class="text-center">
+      <p class="mb-0">© 2026 Dream Drive Showroom | All Rights Reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+    <!-- bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const toggleBtn = document.getElementById("themeToggle");
+
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    }
+  });
+</script>
+
+</body>
+</html>
